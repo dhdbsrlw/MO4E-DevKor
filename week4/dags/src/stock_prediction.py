@@ -66,6 +66,10 @@ def normalize_data(df):
     
     return norm_df
   
+
+def get_data_size():
+    
+
   
 def split_data(df):
     
@@ -177,10 +181,12 @@ def train():
     
     model = get_model()
     criterion = get_loss_function()
-    optimzer = get_optimizer(model, lr=learning_rate)
+    optimizer = get_optimizer(model, lr=learning_rate)
     
+    x_train, y_train, x_valid, y_valid, x_test, y_test = split_data() # 수정 필요
+    X_train, y_train = convert_to_tensor(x_train, y_train)
+
     
-    # 여기서부터 코드 봐야된다.
     # training loop
     for epoch in range(n_epochs):
         for iteration in range(0, train_set_size, batch_size):
