@@ -37,3 +37,6 @@
 
 - HTTP: POST
 - URI: /user
+
+## 결과
+![스크린샷 2023-11-21 022908](https://github.com/dhdbsrlw/MO4E-devkor/assets/87515295/475322c8-9ccd-4334-8e5b-55bf4f0f51a9)
