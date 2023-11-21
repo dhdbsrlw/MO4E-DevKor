@@ -5,7 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # postgreSQL 사용하여 DB connection
-SQLALCHEMY_DATABASE_URL = "postgresql://yoonjinoh:{password}@localhost:5432/DevKor_user" # git 공개용으로 pasword 는 비공개 처리
+SQLALCHEMY_DATABASE_URL = "postgresql://yoonjinoh:3703@localhost:5432/DevKor_user" # git 공개용으로 pasword 는 비공개 처리
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL
